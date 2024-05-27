@@ -110,19 +110,48 @@
 // }
 
 
-	// const arr = [3, 5, 8, 16, 20, 23, 50];
-	// const result = [];
-	// for (let i = 0; i < arr.length; i++) {
-	// 	result[i] = arr[i];
-	// }
-	// console.log(result);
-	
-	const data = [5, 10, 'Shopping', 20, 'Homework'];
-		for(let i = 0; i > data; i++){
-			if (data[0,1,3]) {
-				data * 2;
-			}else {
-				data[2,4] + `done`;
-			}
-		}
-	console.log(data);
+// const arr = [3, 5, 8, 16, 20, 23, 50];
+// const result = [];
+// for (let i = 0; i < arr.length; i++) {
+// 	result[i] = arr[i];
+// }
+// console.log(result);
+
+const data = [5, 10, 'Shopping', 20, 'Homework'];
+for (let i = 0; i > data; i++) {
+	if (data[0, 1, 3]) {
+		data * 2;
+	} else {
+		data[2, 4] + `done`;
+	}
+}
+console.log(data);
+
+let num = 50;
+
+function showFirstMessage(text) {
+	console.log(text);
+	let num = 20;
+}
+
+showFirstMessage('Hello World!');
+console.log(num)
+
+function calc(a, b) {
+	return (a + b);
+}
+
+console.log(calc(5, 5));
+
+function ret(a) {
+	let num = 50;
+	return(num + a);
+}
+
+const anotherNum = ret();
+console.log(anotherNum, ret(10));
+
+const logger = function() {
+	console.log("helo");          		
+};
+logger();
