@@ -232,12 +232,12 @@ const options = {
 		background: "red",
 	},
 	//создали свой метод
-	makeTest: function (){
+	makeTest: function () {
 		console.log("test");
 	}
 };
 //в данном случае снизу мы деструктурируем объект оптион и вытаскиваем оттуда ключи вложенного объекта колор в консоли мы получаем значение клчей колор
-const {border, background} = options.colors;
+const { border, background } = options.colors;
 console.log(border);
 
 options.makeTest();
@@ -263,6 +263,34 @@ console.log(Object.keys(options).length);
 // 		console.log(`Свойство: ${key} имеет свойство ${options[key]}`);
 // 		counter++;
 // 	}
-	
+
 // }
 // console.log(counter);
+
+
+for (let i = 1; i <= 5; i++) {
+	console.log(i);
+}
+let num = 8;
+while (num) {
+	console.log(num);
+	num--;
+}
+let pip = 0;
+while (pip < 3) {
+	console.log(`Chislo ${pip}`);
+	pip++;
+}
+function calcSumm(numOne, numTwo) {
+	if (numTwo === 1) {
+		return numOne;
+	} else {
+		return numOne * calcSumm(numOne, numTwo - 1);
+	}
+}
+console.log(calcSumm(2, 3));
+
+function showMessage(text, name) {
+	console.log(`${text},${name}!`)
+}
+setInterval(showMessage, 500, "Privet", "Lox");
