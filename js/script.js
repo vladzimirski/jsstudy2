@@ -294,3 +294,60 @@ function showMessage(text, name) {
 	console.log(`${text},${name}!`)
 }
 setInterval(showMessage, 500, "Privet", "Lox");
+
+// let name1 = Symbol("id");
+let lilya = {
+	name:"Лиля",
+	lifestyle:"говняк",
+	// [id]:"Некое значение",
+};
+console.log(lilya);
+//добавление значения объекта
+lilya.iq = 60;
+console.log(lilya);
+//добавляем имя свойства из двух или более слов
+lilya["lyubit nasvai"] = true;
+console.log(lilya);
+//добавление вложенности в уже существующий объект
+lilya.hobbi = {
+	hobbione:"spat",
+	hobbitwo:"srat",
+};
+console.log(lilya);
+//изменение значения свойства
+lilya.iq = 17;
+console.log(lilya);
+//удаление свойства из объекта
+// delete lilya.iq;
+console.log(lilya);
+//дублирование объекта по сути мы переносим все данные из одного объекта в друго и можем менять значения
+let pasha = Object.assign({},lilya);
+pasha.iq = 200;
+pasha.name = "pasha";
+console.log(lilya);
+console.log(pasha);
+// тут мы через обжект эссайн добавляем новые свойства и значения в уже дублированный объект
+Object.assign(pasha, {pisyun: "2cm", rost: "2metra"});
+console.log(pasha);
+
+let objtest = {
+	name:"popa",
+	age:10,
+	height:25,
+}
+for (let key in objtest){
+	//перебираем свойства
+	console.log(key);
+	//перебираем значения свойств
+	console.log(objtest[key]);
+}
+
+function Userinfo(name){
+	//this = {} создается пустой объект (неявно)
+	this.name = name;
+	this.age = 20;
+	//return this; возвращается объект (неявно) 
+}
+console.log(new Userinfo("lilya"));
+console.log(new Userinfo("pasha"));
+//https://youtube.com/clip/UgkxmOXoiQxsbrR26tYXHwekiA81vzBl1J9h?si=BLHy5aXtF9bLhOwW дз сделать на некст занятии
