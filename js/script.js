@@ -351,3 +351,77 @@ function Userinfo(name){
 console.log(new Userinfo("lilya"));
 console.log(new Userinfo("pasha"));
 //https://youtube.com/clip/UgkxmOXoiQxsbrR26tYXHwekiA81vzBl1J9h?si=BLHy5aXtF9bLhOwW дз сделать на некст занятии
+let loserInfo = {
+	name: "Вася",
+	age:30,
+}
+console.log(loserInfo);
+loserInfo.name = "Lena";
+console.log(loserInfo);
+delete loserInfo.name;
+console.log(loserInfo);
+
+//ЧИСЛА!!!
+
+//запись длинных чисел, чтобы не запутаться 
+
+let someBigNum = 1e6; // 1 * 1000000
+console.log(someBigNum);
+// для маленьких чисел запись другая 
+let someSmallNum = 1e-6; // 1 / 1000000
+console.log(someSmallNum);
+
+// to string  считает число в других системах счислений и возвращает строку
+let chislo = 228;
+console.log(chislo.toString(2));
+console.log(chislo.toString(8));
+console.log(chislo.toString(16));
+// math.floor  округление в меньшую сторону 
+let
+	numA = Math.floor(5.8),
+	numB = Math.floor(3.2),
+	numC = Math.floor(-2.4);
+	
+console.log(numA);
+console.log(numB);
+console.log(numC);
+// Math.ceil окргуляет в большую сторону 
+// Math.round округляет до ближайшего целого 
+
+
+// туфиксед (1) дает нам в ответе одно число после запятой отдает строку, чтобы получить число юзаем +имя либо функцию намбер 
+
+let drob = 5.845;
+console.log(drob.toFixed(1));
+
+//isNan нужен для того что бы проверить наше выражение на NaN
+
+console.log(Number(25 + "hui"));
+console.log(isNaN(25 + "hui"));
+
+
+//isFinite  приобразует аргумент в число и возвращает true
+
+console.log(isFinite("25"));
+console.log(isFinite("pisya"));
+console.log(isFinite(10/0));
+
+//parseInt parseFloat
+
+let problem = parseInt("158.62px");
+console.log(problem);
+let problemDva = parseFloat("158.62px");
+console.log(problemDva);
+
+//math дает рандом от нуля до 1 не включая 1
+console.log(Math.random());
+//math минимальное и максимальное число из аргументов
+console.log(Math.max(5,7,228));
+console.log(Math.min(5,7,228));
+//math возвращает абсолютное значение числа
+console.log(Math.abs(-228));
+//math  возводит первый аругмент в степень второго аргумента 
+console.log(Math.pow(5,8));
+
+
+// СДЕЛАТЬ ДОМАШКУ К ПРЕДЫДУЩЕМУ УРОКУ 	
