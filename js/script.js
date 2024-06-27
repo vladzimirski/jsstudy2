@@ -424,4 +424,22 @@ console.log(Math.abs(-228));
 console.log(Math.pow(5,8));
 
 
-// СДЕЛАТЬ ДОМАШКУ К ПРЕДЫДУЩЕМУ УРОКУ 	mm 
+// СДЕЛАТЬ ДОМАШКУ К ПРЕДЫДУЩЕМУ УРОКУ 	
+
+// ДОМАШКА
+
+let numTest = Math.round((1.005+ Number.EPSILON) * 100)/100;
+console.log(numTest);
+
+let valueDZ = parseFloat('158.58px');
+console.log(valueDZ);
+console.log(typeof(valueDZ));
+
+let valueA = 58 + 'Фрилансер';
+if(isNaN(valueA)){
+	console.log('result is nan')
+};
+
+console.log(Math.max(10,58,39,-150));
+
+console.log(Math.floor(58.858));
